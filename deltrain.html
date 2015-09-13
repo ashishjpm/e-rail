@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: #DADADA}
+            .divhead{ background-color: black; height: 100px; width: 1350px}
+            .divhead1{ margin-left: 30px; margin-top: 27px; float: left; font-size: 40px;font color:red;}
+            .regform{ margin-top: 80px; margin-left: 550px;}
+            .btn{ width: 11.5em;  height: 2.5em;}
+        </style>
+    </head>
+    <body>
+        <div class="divhead"><div class="divhead1"><font color="white">E - RAIL</font></div>
+            <div class="divhead1" style="margin-left:660px"></div>
+            <div class="divhead1"><font color="white">DELETE TRAIN - PAGE</font></div>
+        </div>
+        <div class="regform">
+            <form action="deltrain.php" name="form3" method="post">
+                <input type="text" name="deltno" placeholder="Train No." style="font-size:28px; height:35px"><br><br>
+                <button type="reset" value="Reset" class="btn">RESET</button>
+                <input type="submit" name="Submit" value="SUBMIT"  class="btn">
+            </form>
+        </div>
+    </body>
+</html>

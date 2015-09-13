@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: #DADADA}
+            .divhead{ background-color: black; height: 100px; width: 1350px}
+            .divhead1{ margin-left: 30px; margin-top: 27px; float: left; font-size: 40px;font color:red;}
+            .divhead2{ margin-left: 30px; margin-top: 10px; font-size: 40px;font color:red; border:5px solid gray; padding:10px;
+                border-style: solid; border-color: black;border-radius:2px}
+            .btn{ width: 11.5em;  height: 2.5em;}
+            .sel{height: 35px;width: 310px;font-size: 28px}
+        </style>
+    </head>
+    <body>
+        <div class="divhead"><div class="divhead1"><font color="white">E - RAIL</font></div>
+            <div class="divhead1" style="margin-left:680px"></div>
+            <div class="divhead1"><font color="white">SEARCH TRAIN - PAGE</font></div>
+        </div>
+        <div class="funuser" style="margin-top: 80px; margin-left: 100px">
+            <form action="search.php" name="form4" method="post">
+                <select name="src" class="sel">
+                    <option disable selected>Source Station</option>
+                    <option value="abc">abc</option>
+                    <option value="def">def</option>
+                    <option value="ghi">ghi</option>
+                </select></br></br>
+                <select name="dest" class="sel">
+                    <option disable selected>Destination Station</option>
+                    <option value="jkl">jkl</option>
+                    <option value="mno">mno</option>
+                    <option value="pqr">pqr</option>
+                </select></br></br>
+                <button type="reset" value="Reset" class="btn">RESET</button>
+                <input type="submit" name="Submit" value="SUBMIT"  class="btn">
+            </form>
+        </div>
+    </body>
+</html>

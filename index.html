@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: #DADADA}
+            .divhead{ background-color: black; height: 100px; width: 1350px}
+            .divhead1{ margin-left: 30px; margin-top: 27px; float: left; font-size: 40px;font color:red;}
+            .divhead2{ margin-left: 30px; margin-top: 11px; float: left; font-size: 40px;font color:red; border:5px solid gray; padding:10px;
+                border-style: solid; border-color: white;border-radius:2px}
+            .regform{ margin-top: 80px; margin-left: 550px;}
+            .btn{ width: 11.5em;  height: 2.5em;}
+        </style>
+        <script>
+            function loginpage()
+                {window.location.assign("login.php");}
+        </script>
+    </head>
+    <body>
+        <div class="divhead">
+            <div class="divhead1"><font color="white">E - RAIL</font></div>
+            <div class="divhead1" style="margin-left:950px"></div>
+            <span class="divhead2" onclick="loginpage()"><font color="white">LOGIN</font></span>
+        </div>
+        <div class="regform">
+            <form action="registrationform.php" name="form1" method="post">
+                <input type="text" name="uid" placeholder="UserId" style="font-size:28px; height:35px"><br><br>
+                <input type="text" name="fname" placeholder="First Name" style="font-size:28px; height:35px"><br><br>
+                <input type="text" name="lname" placeholder="Last Name" style="font-size:28px; height:35px"><br><br>
+                <input type="text" name="email" placeholder="E-mail" style="font-size:28px; height:35px"><br><br>
+                <input type="password" name="password" placeholder="Password" style="font-size:28px; height:35px"><br><br>
+                <input type="text" name="pno" placeholder="Phone No." style="font-size:28px; height:35px"><br><br>
+                <button type="reset" value="Reset" class="btn">RESET</button>
+                <input type="submit" name="Submit" value="SUBMIT"  class="btn">
+            </form>
+        </div>
+    </body>
+</html>

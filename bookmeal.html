@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: #DADADA}
+            .divhead{ background-color: black; height: 100px; width: 1350px}
+            .divhead1{ margin-left: 30px; margin-top: 27px; float: left; font-size: 40px;font color:red;}
+            .divhead2{ margin-left: 30px; margin-top: 10px; font-size: 40px;font color:red; border:5px solid gray; padding:10px;
+                border-style: solid; border-color: black;border-radius:2px}
+            .btn{ width: 11.5em;  height: 2.5em;}
+            .sel{height: 35px;width: 310px;font-size: 28px}
+        </style>
+    </head>
+    <body>
+        <div class="divhead"><div class="divhead1"><font color="white">E - RAIL</font></div>
+            <div class="divhead1" style="margin-left:680px"></div>
+            <div class="divhead1"><font color="white">BOOK MEALS - PAGE</font></div>
+        </div>
+        <center>
+        <div class="funuser" style="margin-top: 120px; margin-left: 100px">
+            <form action="bookmeal.php" name="form5" method="post">
+                <input type="text" name="tno" placeholder="Train No." style="font-size:28px; height:35px"><br><br>
+                <select name="class" class="sel">
+                    <option disable selected>Select the class</option>
+                    <option value="asl">Sleeper class</option>
+                    <option value="aac">A.C. class</option>
+                    <option value="agn">Genral class</option>
+                </select></br></br>
+                <select name="food" class="sel">
+                    <option disable selected>Source food type</option>
+                    <option value="veg meals">Veg. meals</option>
+                    <option value="n-veg meals">N-Veg. meals</option>
+                    <option value="dosa">Dosa</option>
+                </select></br></br>
+                <input type="submit" name="Submit" value="SUBMIT"  class="btn">
+            </form>
+        </div>
+        </center>
+    </body>
+</html>
